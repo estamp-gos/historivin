@@ -34,7 +34,7 @@ const HeroTwo = () => {
               
               {/* Title */}
               <h1 className="hero-title">
-                <span className="title-gradient">Car Check</span> Can Save You 
+                <span className="title-gradient">Histori vin</span> Can Save You 
                 <span className="title-highlight"> Thousands</span>
               </h1>
               

@@ -43,7 +43,7 @@ const HomePage = () => {
       {
         "@type": "Organization",
         "@id": "https://carcheck.store/#organization",
-        "name": "Car Check Store",
+        "name": "Histori vin Store",
         "alternateName": ["CarCheckStore", "Car Check", "Vehicle Check Store"],
         "url": "https://carcheck.store",
         "logo": {

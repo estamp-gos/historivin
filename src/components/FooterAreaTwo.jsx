@@ -167,12 +167,12 @@ const FooterAreaTwo = () => {
             <div className="row align-items-center">
               <div className="col-md-12 text-center">
                 <p className="copyright-text-glass">
-                  © 2012 - 2025 Car Check Store Vehicle History Reports. All Rights Reserved. 
+                  © 2012 - 2025 Histori vin Store Vehicle History Reports. All Rights Reserved. 
                   Use of this Website constitutes acceptance of our{' '}
                   <a href="#terms">Terms & Conditions</a>,{' '}
                   <a href="#privacy">Privacy Policy</a>,{' '}
                   <a href="#refund">Refund Policy</a>.{' '}
-                  This site is owned and operated by Car Check Store - an approved NMVTIS data provider.
+                  This site is owned and operated by Histori vin Store - an approved NMVTIS data provider.
                 </p>
               </div>
             </div>
