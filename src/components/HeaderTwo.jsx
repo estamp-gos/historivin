@@ -36,7 +36,7 @@ const HeaderTwo = () => {
               {/* Logo */}
               <div className="logo-wrapper">
                 <Link href="/">
-                  <img src="./logo.png" alt="Car Check Store" className="logo-img" />
+                  <img src="./logo2.png" alt="Car Check Store" className="logo-img" />
                 </Link>
               </div>
               
@@ -102,7 +102,7 @@ const HeaderTwo = () => {
           <div className="mobile-panel">
             <div className="mobile-header">
               <Link href="/">
-                <img src="/logo.png" alt="Car Check Store" />
+                <img src="/logo2.png" alt="Car Check Store" />
               </Link>
               <button className="close-btn" onClick={mobileMenu}>
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
