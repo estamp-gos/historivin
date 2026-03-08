@@ -30,7 +30,7 @@ const ScrollToTop = dynamic(() => import('react-scroll-to-top'), {
 
 const HomePage = () => {
   let [active, setActive] = useState(true);
-  
+
   useEffect(() => {
     setTimeout(function () {
       setActive(false);
@@ -42,17 +42,17 @@ const HomePage = () => {
     "@graph": [
       {
         "@type": "Organization",
-        "@id": "https://carcheck.store/#organization",
-        "name": "Histori vin Store",
-        "alternateName": ["CarCheckStore", "Car Check", "Vehicle Check Store"],
-        "url": "https://carcheck.store",
+        "@id": "https://historivin.com/#organization",
+        "name": "Historivin",
+        "alternateName": ["Historivin", "Vehicle Check Store"],
+        "url": "https://historivin.com",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://carcheck.store/assets/img/logo.svg",
+          "url": "https://historivin.com/assets/img/logo.svg",
           "width": 300,
           "height": 100
         },
-        "description": "Car Check Store is the leading provider of instant vehicle history reports and VIN check services.",
+        "description": "Historivin is the leading provider of instant vehicle history reports and VIN check services.",
         "foundingDate": "2024",
         "knowsAbout": ["Vehicle History Reports", "VIN Check", "Car Inspection", "Auto Reports", "Vehicle Verification"],
         "areaServed": {
@@ -63,19 +63,19 @@ const HomePage = () => {
       },
       {
         "@type": "WebSite",
-        "@id": "https://carcheck.store/#website",
-        "url": "https://carcheck.store",
-        "name": "Car Check Store",
+        "@id": "https://historivin.com/#website",
+        "url": "https://historivin.com",
+        "name": "Historivin",
         "description": "Get instant vehicle history reports and VIN checks",
         "publisher": {
-          "@id": "https://carcheck.store/#organization"
+          "@id": "https://historivin.com/#organization"
         },
         "potentialAction": [
           {
             "@type": "SearchAction",
             "target": {
               "@type": "EntryPoint",
-              "urlTemplate": "https://carcheck.store/?search={search_term_string}"
+              "urlTemplate": "https://historivin.com/?search={search_term_string}"
             },
             "query-input": "required name=search_term_string"
           }
@@ -87,41 +87,41 @@ const HomePage = () => {
   return (
     <>
       <Head>
-        <title>Car Check Store - #1 Vehicle History Reports & VIN Check Services | Instant Car Inspection Reports</title>
-        <meta 
-          name="description" 
-          content="Car Check Store provides instant, comprehensive vehicle history reports and car inspection services. Get detailed VIN checks, accident records, ownership history, and market value analysis. Your trusted car check store for used car buying decisions." 
+        <title>Historivin - #1 Vehicle History Reports & VIN Check Services | Instant Car Inspection Reports</title>
+        <meta
+          name="description"
+          content="Historivin provides instant, comprehensive vehicle history reports and car inspection services. Get detailed VIN checks, accident records, ownership history, and market value analysis. Your trusted vehicle history partner."
         />
-        <meta 
-          name="keywords" 
-          content="car check store, VIN check, vehicle history report, car inspection report, VIN number lookup, vehicle inspection, car history check, auto report, VIN decoder, vehicle records, car buying report, accident history, title check, ownership records, vehicle verification, auto inspection" 
+        <meta
+          name="keywords"
+          content="historivin, VIN check, vehicle history report, car inspection report, VIN number lookup, vehicle inspection, car history check, auto report, VIN decoder, vehicle records, car buying report, accident history, title check, ownership records, vehicle verification, auto inspection"
         />
-        
+
         {/* Open Graph Tags */}
-        <meta property="og:title" content="Car Check Store - #1 Vehicle History Reports & VIN Check Services" />
-        <meta property="og:description" content="Car Check Store provides instant, comprehensive vehicle history reports and car inspection services. Get detailed VIN checks, accident records, ownership history, and market value analysis." />
-        <meta property="og:image" content="https://carcheck.store/card.png" />
+        <meta property="og:title" content="Historivin - #1 Vehicle History Reports & VIN Check Services" />
+        <meta property="og:description" content="Historivin provides instant, comprehensive vehicle history reports and car inspection services. Get detailed VIN checks, accident records, ownership history, and market value analysis." />
+        <meta property="og:image" content="https://historivin.com/card.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
-        <meta property="og:image:alt" content="Car Check Store - Vehicle History Reports and VIN Check Services" />
-        <meta property="og:url" content="https://carcheck.store" />
+        <meta property="og:image:alt" content="Historivin - Vehicle History Reports and VIN Check Services" />
+        <meta property="og:url" content="https://historivin.com" />
         <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="Car Check Store" />
+        <meta property="og:site_name" content="Historivin" />
         <meta property="og:locale" content="en_US" />
-        
+
         {/* Twitter Card Tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Car Check Store - #1 Vehicle History Reports & VIN Check Services" />
-        <meta name="twitter:description" content="Car Check Store provides instant, comprehensive vehicle history reports and car inspection services. Get detailed VIN checks, accident records, ownership history, and market value analysis." />
-        <meta name="twitter:image" content="https://carcheck.store/card.png" />
-        <meta name="twitter:image:alt" content="Car Check Store - Vehicle History Reports and VIN Check Services" />
-        <meta name="twitter:site" content="@carcheckstore" />
-        
+        <meta name="twitter:title" content="Historivin - #1 Vehicle History Reports & VIN Check Services" />
+        <meta name="twitter:description" content="Historivin provides instant, comprehensive vehicle history reports and car inspection services. Get detailed VIN checks, accident records, ownership history, and market value analysis." />
+        <meta name="twitter:image" content="https://historivin.com/card.png" />
+        <meta name="twitter:image:alt" content="Historivin - Vehicle History Reports and VIN Check Services" />
+        <meta name="twitter:site" content="@historivin" />
+
         {/* Additional SEO Tags */}
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-        <meta name="author" content="Car Check Store" />
-        <link rel="canonical" href="https://carcheck.store/" />
-        
+        <meta name="author" content="Historivin" />
+        <link rel="canonical" href="https://historivin.com/" />
+
         {/* Structured Data */}
         <script
           type="application/ld+json"

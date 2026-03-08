@@ -1,5 +1,5 @@
-# Car Check Store - Vehicle History Reports & VIN Check Services
-# https://carcheck.store
+# Historivin - Vehicle History Reports & VIN Check Services
+# https://historivin.com
 
 User-agent: *
 Allow: /
@@ -46,8 +46,8 @@ User-agent: Slurp
 Crawl-delay: 1
 
 # Sitemap location
-Sitemap: https://carcheck.store/sitemap.xml
+Sitemap: https://historivin.com/sitemap.xml
 
 # Additional sitemaps for better indexing
-# Sitemap: https://carcheck.store/sitemap-blog.xml
-# Sitemap: https://carcheck.store/sitemap-pages.xml
+# Sitemap: https://historivin.com/sitemap-blog.xml
+# Sitemap: https://historivin.com/sitemap-pages.xml

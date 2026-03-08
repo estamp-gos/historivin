@@ -8,7 +8,7 @@ const HeroTwo = () => {
     e.preventDefault();
     const pricingSection = document.querySelector('#pricing');
     if (pricingSection) {
-      pricingSection.scrollIntoView({ 
+      pricingSection.scrollIntoView({
         behavior: 'smooth',
         block: 'start'
       });
@@ -21,7 +21,7 @@ const HeroTwo = () => {
       <div className="hero-blob blob-1"></div>
       <div className="hero-blob blob-2"></div>
       <div className="hero-blob blob-3"></div>
-      
+
       <div className="container">
         <div className="row align-items-center">
           <div className="col-lg-6">
@@ -31,47 +31,47 @@ const HeroTwo = () => {
                 <span className="badge-dot"></span>
                 <span>Trusted by 1M+ Users Worldwide</span>
               </div>
-              
+
               {/* Title */}
               <h1 className="hero-title">
-                <span className="title-gradient">Histori vin</span> Can Save You 
+                <span className="title-gradient">Historivin</span> Can Save You
                 <span className="title-highlight"> Thousands</span>
               </h1>
-              
+
               <p className="hero-subtitle">
-                About 40% of used cars carry documented accident damage, and nearly 
-                20% sit under an open safety recall. One quick VIN check can flag 
+                About 40% of used cars carry documented accident damage, and nearly
+                20% sit under an open safety recall. One quick VIN check can flag
                 those issues before your money leaves your pocket.
               </p>
-              
+
               {/* VIN Checker Glass Card */}
               <div className="vin-checker-glass">
                 <div className="tab-pills">
-                  <button 
+                  <button
                     className={`tab-pill ${activeTab === 'vin' ? 'active' : ''}`}
                     onClick={() => setActiveTab('vin')}
                   >
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                      <path d="M9 17H5a2 2 0 01-2-2V5a2 2 0 012-2h14a2 2 0 012 2v10a2 2 0 01-2 2h-4"/>
-                      <path d="M12 15l5 6H7l5-6z"/>
+                      <path d="M9 17H5a2 2 0 01-2-2V5a2 2 0 012-2h14a2 2 0 012 2v10a2 2 0 01-2 2h-4" />
+                      <path d="M12 15l5 6H7l5-6z" />
                     </svg>
                     by VIN
                   </button>
-                  <button 
+                  <button
                     className={`tab-pill ${activeTab === 'plate' ? 'active' : ''}`}
                     onClick={() => setActiveTab('plate')}
                   >
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                      <rect x="2" y="6" width="20" height="12" rx="2"/>
-                      <path d="M6 12h.01M12 12h.01M18 12h.01"/>
+                      <rect x="2" y="6" width="20" height="12" rx="2" />
+                      <path d="M6 12h.01M12 12h.01M18 12h.01" />
                     </svg>
                     by License Plate
                   </button>
                 </div>
-                
+
                 <form onSubmit={handleCheck} className="vin-form">
                   <div className="input-row">
-                    <input 
+                    <input
                       type="text"
                       placeholder="17-character VIN/License Plate Num"
                       value={vinNumber}
@@ -81,31 +81,31 @@ const HeroTwo = () => {
                     <button type="submit" className="check-btn-glass">
                       <span>Check Now</span>
                       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                        <path d="M5 12h14M12 5l7 7-7 7" />
                       </svg>
                     </button>
                   </div>
                   <div className="input-hints">
                     <a href="#" className="hint-link">
                       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                        <circle cx="12" cy="12" r="10"/>
-                        <path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3"/>
-                        <path d="M12 17h.01"/>
+                        <circle cx="12" cy="12" r="10" />
+                        <path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3" />
+                        <path d="M12 17h.01" />
                       </svg>
                       Where to find VIN?
                     </a>
                   </div>
                 </form>
               </div>
-              
+
               {/* Stats */}
               <div className="hero-stats-row">
                 <div className="stat-glass">
                   <div className="stat-icon-glass">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                      <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
-                      <circle cx="9" cy="7" r="4"/>
-                      <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/>
+                      <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
+                      <circle cx="9" cy="7" r="4" />
+                      <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" />
                     </svg>
                   </div>
                   <div className="stat-info">
@@ -116,8 +116,8 @@ const HeroTwo = () => {
                 <div className="stat-glass">
                   <div className="stat-icon-glass">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                      <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
-                      <path d="M22 4L12 14.01l-3-3"/>
+                      <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
+                      <path d="M22 4L12 14.01l-3-3" />
                     </svg>
                   </div>
                   <div className="stat-info">
@@ -128,8 +128,8 @@ const HeroTwo = () => {
                 <div className="stat-glass">
                   <div className="stat-icon-glass">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                      <circle cx="12" cy="12" r="10"/>
-                      <path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/>
+                      <circle cx="12" cy="12" r="10" />
+                      <path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z" />
                     </svg>
                   </div>
                   <div className="stat-info">
@@ -140,12 +140,12 @@ const HeroTwo = () => {
               </div>
             </div>
           </div>
-          
+
           <div className="col-lg-6">
             <div className="hero-visual animate-fade-in-right">
               <div className="hero-image-container">
-                <img 
-                  src="/hero.webp" 
+                <img
+                  src="/hero.webp"
                   alt="Vehicle History Report"
                   className="hero-main-img"
                 />
@@ -153,8 +153,8 @@ const HeroTwo = () => {
                 <div className="floating-card floating-1">
                   <div className="fc-icon green">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                      <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
-                      <path d="M22 4L12 14.01l-3-3"/>
+                      <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
+                      <path d="M22 4L12 14.01l-3-3" />
                     </svg>
                   </div>
                   <div className="fc-text">
@@ -165,7 +165,7 @@ const HeroTwo = () => {
                 <div className="floating-card floating-2">
                   <div className="fc-icon purple">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
                     </svg>
                   </div>
                   <div className="fc-text">

@@ -15,9 +15,9 @@ const PricingPlanTwo = () => {
   const CONFIG = {
     clientToken: "live_57a7704d22d689a024bdfcbfa1c",
     prices: {
-      silver: "pri_01k2hte2d4p6r7z81j9kwfyj1q",
-      gold: "pri_01k2htft2gxs71cnjjnwvcs6en",
-      platinum: "pri_01k2hthk8hjm2bmr6hmv6zamwh"
+      silver: "pri_01k34bw78gwcmqk98s3jjda6k4",
+      gold: "pri_01kcvwfzy6kffsgz4v9s3d8fx9",
+      platinum: "pri_01kcvwnemp9042xv448gefr5ct"
     }
   };
 
@@ -102,15 +102,15 @@ const PricingPlanTwo = () => {
   const formatPrice = (price, countryCode) => {
     const format = CURRENCY_FORMATS[countryCode] || CURRENCY_FORMATS.US;
     const exchangeRate = EXCHANGE_RATES[countryCode] || 1;
-    
+
     let convertedPrice = price * exchangeRate;
-    
+
     if (countryCode === 'JP') {
       convertedPrice = Math.round(convertedPrice);
     } else {
       convertedPrice = convertedPrice.toFixed(2);
     }
-    
+
     if (format.position === 'before') {
       return `${format.symbol}${convertedPrice}`;
     } else {
@@ -241,8 +241,8 @@ const PricingPlanTwo = () => {
           <div className="pricing-header">
             <span className="pricing-badge">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <path d="M20.59 13.41l-7.17 7.17a2 2 0 01-2.83 0L2 12V2h10l8.59 8.59a2 2 0 010 2.82z"/>
-                <line x1="7" y1="7" x2="7.01" y2="7"/>
+                <path d="M20.59 13.41l-7.17 7.17a2 2 0 01-2.83 0L2 12V2h10l8.59 8.59a2 2 0 010 2.82z" />
+                <line x1="7" y1="7" x2="7.01" y2="7" />
               </svg>
               Pricing Plans
             </span>
@@ -257,37 +257,37 @@ const PricingPlanTwo = () => {
           {/* Pricing Cards */}
           <div className="pricing-grid">
             {plans.map((plan, index) => (
-              <div 
-                key={plan.id} 
+              <div
+                key={plan.id}
                 className={`pricing-card-glass ${plan.popular ? 'popular' : ''}`}
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 {plan.popular && (
                   <div className="popular-badge">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                      <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
                     </svg>
                     Most Popular
                   </div>
                 )}
-                
+
                 <div className="plan-header">
                   <div className="plan-icon">
                     {plan.id === 'silver' && (
                       <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-                        <circle cx="12" cy="8" r="5"/>
-                        <path d="M3 21v-2a7 7 0 0114 0v2"/>
+                        <circle cx="12" cy="8" r="5" />
+                        <path d="M3 21v-2a7 7 0 0114 0v2" />
                       </svg>
                     )}
                     {plan.id === 'gold' && (
                       <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
                       </svg>
                     )}
                     {plan.id === 'platinum' && (
                       <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-                        <path d="M12 15l-3 4.5 1.5-5L6 12l5 .5L12 7l1 5.5 5-.5-4.5 2.5 1.5 5L12 15z"/>
-                        <circle cx="12" cy="12" r="10"/>
+                        <path d="M12 15l-3 4.5 1.5-5L6 12l5 .5L12 7l1 5.5 5-.5-4.5 2.5 1.5 5L12 15z" />
+                        <circle cx="12" cy="12" r="10" />
                       </svg>
                     )}
                   </div>
@@ -302,11 +302,11 @@ const PricingPlanTwo = () => {
 
                 <div className="plan-highlight">
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                    <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
-                    <path d="M22 4L12 14.01l-3-3"/>
+                    <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
+                    <path d="M22 4L12 14.01l-3-3" />
                   </svg>
-                  <span dangerouslySetInnerHTML={{ 
-                    __html: plan.highlight.replace(/(\d+cc\+?)/g, '<strong>$1</strong>') 
+                  <span dangerouslySetInnerHTML={{
+                    __html: plan.highlight.replace(/(\d+cc\+?)/g, '<strong>$1</strong>')
                   }} />
                 </div>
 
@@ -315,7 +315,7 @@ const PricingPlanTwo = () => {
                     <li key={idx}>
                       <span className="check-icon">
                         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">
-                          <polyline points="20 6 9 17 4 12"/>
+                          <polyline points="20 6 9 17 4 12" />
                         </svg>
                       </span>
                       {feature}
@@ -323,13 +323,13 @@ const PricingPlanTwo = () => {
                   ))}
                 </ul>
 
-                <button 
+                <button
                   className={`plan-btn ${plan.popular ? 'primary' : 'secondary'}`}
                   onClick={() => openModal(plan.id)}
                 >
                   <span>Get {plan.name} Plan</span>
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                    <path d="M5 12h14M12 5l7 7-7 7" />
                   </svg>
                 </button>
               </div>
@@ -340,21 +340,21 @@ const PricingPlanTwo = () => {
           <div className="trust-section">
             <div className="trust-item">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
               </svg>
               <span>Secure Payment</span>
             </div>
             <div className="trust-item">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <circle cx="12" cy="12" r="10"/>
-                <polyline points="12 6 12 12 16 14"/>
+                <circle cx="12" cy="12" r="10" />
+                <polyline points="12 6 12 12 16 14" />
               </svg>
               <span>Instant Delivery</span>
             </div>
             <div className="trust-item">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
-                <polyline points="22 4 12 14.01 9 11.01"/>
+                <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
+                <polyline points="22 4 12 14.01 9 11.01" />
               </svg>
               <span>NMVTIS Verified</span>
             </div>
@@ -368,21 +368,21 @@ const PricingPlanTwo = () => {
           <div className="modal-glass" onClick={(e) => e.stopPropagation()}>
             <button className="modal-close" onClick={closeModal}>
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <path d="M18 6L6 18M6 6l12 12"/>
+                <path d="M18 6L6 18M6 6l12 12" />
               </svg>
             </button>
-            
+
             <div className="modal-header">
               <div className="modal-icon">
                 <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-                  <path d="M9 17H5a2 2 0 01-2-2V5a2 2 0 012-2h14a2 2 0 012 2v10a2 2 0 01-2 2h-4"/>
-                  <path d="M12 15l5 6H7l5-6z"/>
+                  <path d="M9 17H5a2 2 0 01-2-2V5a2 2 0 012-2h14a2 2 0 012 2v10a2 2 0 01-2 2h-4" />
+                  <path d="M12 15l5 6H7l5-6z" />
                 </svg>
               </div>
               <h3 className="modal-title">{selectedPlan?.charAt(0).toUpperCase() + selectedPlan?.slice(1)} Plan</h3>
               <p className="modal-subtitle">Enter your details to continue</p>
             </div>
-            
+
             <form onSubmit={handleSubmit} className="modal-form">
               <div className="form-group">
                 <label>Full Name</label>
@@ -417,7 +417,7 @@ const PricingPlanTwo = () => {
                   placeholder="17-character VIN/License Plate Num"
                 />
               </div>
-              
+
               <button type="submit" className="submit-btn" disabled={loading}>
                 {loading ? (
                   <span className="loading-spinner"></span>
@@ -425,7 +425,7 @@ const PricingPlanTwo = () => {
                   <>
                     <span>Proceed to Payment</span>
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                      <path d="M5 12h14M12 5l7 7-7 7"/>
+                      <path d="M5 12h14M12 5l7 7-7 7" />
                     </svg>
                   </>
                 )}

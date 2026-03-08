@@ -1,4 +1,4 @@
-# Car Check Store - SEO Implementation Guide
+# Historivin - SEO Implementation Guide
 
 ## 🚀 SEO Improvements Implemented
 
@@ -29,9 +29,9 @@
 
 ### 1. **Google Search Console Setup**
 1. Go to [Google Search Console](https://search.google.com/search-console)
-2. Add your property: `https://carcheck.store`
+2. Add your property: `https://historivin.com`
 3. Verify ownership using HTML meta tag (already added in index.html)
-4. Submit your sitemap: `https://carcheck.store/sitemap.xml`
+4. Submit your sitemap: `https://historivin.com/sitemap.xml`
 
 ### 2. **Google Analytics Setup**
 1. Replace `G-XXXXXXXXXX` in Analytics.jsx with your actual GA4 tracking ID

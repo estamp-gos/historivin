@@ -9,7 +9,7 @@ export default function Document() {
         <link rel="apple-touch-icon" href="/logo.png" />
         <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#000000" />
-        <link rel="canonical" href="https://carcheck.store" />
+        <link rel="canonical" href="https://historivin.com" />
         {/* Google Analytics */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-WSM396CTML"></script>
         <script

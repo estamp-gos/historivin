@@ -9,7 +9,7 @@ const FooterAreaTwo = () => {
           <div className="footer-orb footer-orb-1"></div>
           <div className="footer-orb footer-orb-2"></div>
         </div>
-        
+
         <div className="footer-cta-section">
           <div className="container">
             <div className="glass-cta-card">
@@ -28,7 +28,7 @@ const FooterAreaTwo = () => {
                       <button className="tab-btn-footer">by License Plate</button>
                     </div>
                     <form className="vin-input-form-footer">
-                      <input 
+                      <input
                         type="text"
                         placeholder="17-character VIN/License Plate Num"
                         className="vin-input-footer"
@@ -42,7 +42,7 @@ const FooterAreaTwo = () => {
                 </div>
               </div>
             </div>
-            
+
             <div className="footer-badges">
               <div className="badge-item">
                 <img src="https://epicvin.com/img2/security/png/niada-logo.png" alt="NIADA" />
@@ -93,7 +93,7 @@ const FooterAreaTwo = () => {
                   </div>
                 </div>
               </div>
-              
+
               <div className="col-lg-2 col-md-6">
                 <div className="footer-widget-glass">
                   <h4 className="footer-widget-title">Company</h4>
@@ -106,7 +106,7 @@ const FooterAreaTwo = () => {
                   </ul>
                 </div>
               </div>
-              
+
               <div className="col-lg-2 col-md-6">
                 <div className="footer-widget-glass">
                   <h4 className="footer-widget-title">Legal</h4>
@@ -119,7 +119,7 @@ const FooterAreaTwo = () => {
                   </ul>
                 </div>
               </div>
-              
+
               <div className="col-lg-2 col-md-6">
                 <div className="footer-widget-glass">
                   <h4 className="footer-widget-title">Services</h4>
@@ -132,15 +132,15 @@ const FooterAreaTwo = () => {
                   </ul>
                 </div>
               </div>
-              
+
               <div className="col-lg-3 col-md-6">
                 <div className="footer-widget-glass">
                   <h4 className="footer-widget-title">Subscribe to Newsletter</h4>
                   <form className="newsletter-form-glass">
                     <div className="newsletter-input-wrapper">
                       <i className="fas fa-envelope"></i>
-                      <input 
-                        type="email" 
+                      <input
+                        type="email"
                         placeholder="Enter your email"
                         className="newsletter-input-glass"
                       />
@@ -167,12 +167,12 @@ const FooterAreaTwo = () => {
             <div className="row align-items-center">
               <div className="col-md-12 text-center">
                 <p className="copyright-text-glass">
-                  © 2012 - 2025 Histori vin Store Vehicle History Reports. All Rights Reserved. 
+                  © 2012 - 2025 Historivin Store Vehicle History Reports. All Rights Reserved.
                   Use of this Website constitutes acceptance of our{' '}
                   <a href="#terms">Terms & Conditions</a>,{' '}
                   <a href="#privacy">Privacy Policy</a>,{' '}
                   <a href="#refund">Refund Policy</a>.{' '}
-                  This site is owned and operated by Histori vin Store - an approved NMVTIS data provider.
+                  This site is owned and operated by Historivin Store - an approved NMVTIS data provider.
                 </p>
               </div>
             </div>

@@ -26,13 +26,13 @@ const ThankYouPage = () => {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "ConfirmationPage",
-    "name": "Thank You - Car Check Store | Order Confirmation",
-    "description": "Thank you for your purchase! Your vehicle history report from Car Check Store is being prepared.",
-    "url": "https://carcheck.store/thank-you",
+    "name": "Thank You - Historivin | Order Confirmation",
+    "description": "Thank you for your purchase! Your vehicle history report from Historivin is being prepared.",
+    "url": "https://historivin.com/thank-you",
     "isPartOf": {
       "@type": "WebSite",
-      "name": "Car Check Store",
-      "url": "https://carcheck.store"
+      "name": "Historivin",
+      "url": "https://historivin.com"
     }
   };
 
@@ -40,26 +40,26 @@ const ThankYouPage = () => {
     <>
       <Head>
         <title>Thank You | Order Confirmation</title>
-        <meta 
-          name="description" 
-          content="Thank you for your purchase! Your vehicle history report from Car Check Store is being prepared and will be delivered to your email within minutes." 
+        <meta
+          name="description"
+          content="Thank you for your purchase! Your vehicle history report from Historivin is being prepared and will be delivered to your email within minutes."
         />
-        <meta 
-          name="keywords" 
-          content="car check store, order confirmation, vehicle history report, VIN check, thank you" 
+        <meta
+          name="keywords"
+          content="historivin, order confirmation, vehicle history report, VIN check, thank you"
         />
-        
+
         {/* Open Graph Tags */}
-        <meta property="og:title" content="Thank You - Car Check Store | Order Confirmation" />
-        <meta property="og:description" content="Thank you for your purchase! Your vehicle history report from Car Check Store is being prepared." />
-        <meta property="og:image" content="https://carcheck.store/card.png" />
-        <meta property="og:url" content="https://carcheck.store/thank-you" />
+        <meta property="og:title" content="Thank You - Historivin | Order Confirmation" />
+        <meta property="og:description" content="Thank you for your purchase! Your vehicle history report from Historivin is being prepared." />
+        <meta property="og:image" content="https://historivin.com/card.png" />
+        <meta property="og:url" content="https://historivin.com/thank-you" />
         <meta property="og:type" content="website" />
-        
+
         {/* Additional SEO Tags */}
         <meta name="robots" content="noindex, nofollow" />
-        <link rel="canonical" href="https://carcheck.store/thank-you" />
-        
+        <link rel="canonical" href="https://historivin.com/thank-you" />
+
         {/* Structured Data */}
         <script
           type="application/ld+json"
@@ -68,12 +68,12 @@ const ThankYouPage = () => {
           }}
         />
       </Head>
-      
+
       <div className="thank-you-page" style={{ backgroundColor: 'var(--page-bg, inherit)', minHeight: '100vh' }}>
         {/* Header Section */}
-        <div className="thank-you-header" style={{ 
-          backgroundColor: 'var(--header-bg, transparent)', 
-          color: 'var(--header-fg, inherit)', 
+        <div className="thank-you-header" style={{
+          backgroundColor: 'var(--header-bg, transparent)',
+          color: 'var(--header-fg, inherit)',
           padding: '60px 0',
           textAlign: 'center'
         }}>
@@ -114,8 +114,8 @@ const ThankYouPage = () => {
                 <div className="row">
                   {/* Order Details */}
                   <div className="col-lg-6 mb-5">
-                    <div className="card" style={{ 
-                      border: '1px solid var(--surface-border, rgba(0,0,0,0.12))', 
+                    <div className="card" style={{
+                      border: '1px solid var(--surface-border, rgba(0,0,0,0.12))',
                       borderRadius: '15px',
                       backgroundColor: 'var(--surface-bg, transparent)',
                       boxShadow: 'var(--elevation-shadow, 0 10px 40px rgba(0,0,0,0.1))',
@@ -148,7 +148,7 @@ const ThankYouPage = () => {
                             </p>
                           </div>
                         </div>
-                        
+
                         <div className="timeline-item" style={{ marginBottom: '25px', display: 'flex', alignItems: 'start' }}>
                           <div style={{
                             width: '30px',
@@ -171,7 +171,7 @@ const ThankYouPage = () => {
                             </p>
                           </div>
                         </div>
-                        
+
                         <div className="timeline-item" style={{ display: 'flex', alignItems: 'start' }}>
                           <div style={{
                             width: '30px',
@@ -200,8 +200,8 @@ const ThankYouPage = () => {
 
                   {/* Support Information */}
                   <div className="col-lg-6 mb-5">
-                    <div className="card" style={{ 
-                      border: '1px solid var(--surface-border, rgba(0,0,0,0.12))', 
+                    <div className="card" style={{
+                      border: '1px solid var(--surface-border, rgba(0,0,0,0.12))',
                       borderRadius: '15px',
                       backgroundColor: 'var(--surface-bg, transparent)',
                       boxShadow: 'var(--elevation-shadow, 0 10px 40px rgba(0,0,0,0.1))',
@@ -211,19 +211,19 @@ const ThankYouPage = () => {
                         <i className="fas fa-headset" style={{ marginRight: '10px' }}></i>
                         Need Help?
                       </h3>
-                      
+
                       <div className="support-item" style={{ marginBottom: '25px' }}>
                         <h5 style={{ color: 'var(--text-primary, currentColor)', marginBottom: '10px' }}>
                           <i className="fas fa-envelope" style={{ marginRight: '10px', color: 'var(--accent, currentColor)' }}></i>
                           Email Support
                         </h5>
                         <p style={{ marginBottom: '0', color: 'var(--text-secondary, currentColor)' }}>
-                          <a href="mailto:car.check.store@gmail.com" style={{ color: 'var(--link-color, inherit)', textDecoration: 'underline' }}>
-                            car.check.store@gmail.com or info@historivin.store
+                          <a href="mailto:support@historivin.com" style={{ color: 'var(--link-color, inherit)', textDecoration: 'underline' }}>
+                            support@historivin.com
                           </a>
                         </p>
                       </div>
-                      
+
                       <div className="support-item" style={{ marginBottom: '25px' }}>
                         <h5 style={{ color: 'var(--text-primary, currentColor)', marginBottom: '10px' }}>
                           <i className="fas fa-clock" style={{ marginRight: '10px', color: 'var(--accent, currentColor)' }}></i>
@@ -233,7 +233,7 @@ const ThankYouPage = () => {
                           We typically respond within 1 to 2 business days.
                         </p>
                       </div>
-                      
+
                       <div className="support-item">
                         <h5 style={{ color: 'var(--text-primary, currentColor)', marginBottom: '10px' }}>
                           <i className="fas fa-shield-alt" style={{ marginRight: '10px', color: 'var(--accent, currentColor)' }}></i>
@@ -250,7 +250,7 @@ const ThankYouPage = () => {
                 {/* CTA Section */}
                 <div className="row justify-content-center mt-5">
                   <div className="col-lg-8 text-center">
-                    <div style={{ 
+                    <div style={{
                       backgroundColor: 'var(--surface-strong-bg, transparent)',
                       padding: '40px',
                       borderRadius: '15px',
@@ -285,9 +285,9 @@ const ThankYouPage = () => {
         </div>
 
         {/* Footer */}
-        <div style={{ 
-          backgroundColor: 'var(--footer-bg, transparent)', 
-          color: 'var(--footer-fg, inherit)', 
+        <div style={{
+          backgroundColor: 'var(--footer-bg, transparent)',
+          color: 'var(--footer-fg, inherit)',
           padding: '30px 0',
           textAlign: 'center'
         }}>
