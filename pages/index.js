@@ -100,7 +100,7 @@ const HomePage = () => {
         {/* Open Graph Tags */}
         <meta property="og:title" content="Historivin - #1 Vehicle History Reports & VIN Check Services" />
         <meta property="og:description" content="Historivin provides instant, comprehensive vehicle history reports and car inspection services. Get detailed VIN checks, accident records, ownership history, and market value analysis." />
-        <meta property="og:image" content="https://historivin.com/card.png" />
+        <meta property="og:image" content="https://historivin.com/logo2.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="Historivin - Vehicle History Reports and VIN Check Services" />
@@ -113,7 +113,7 @@ const HomePage = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Historivin - #1 Vehicle History Reports & VIN Check Services" />
         <meta name="twitter:description" content="Historivin provides instant, comprehensive vehicle history reports and car inspection services. Get detailed VIN checks, accident records, ownership history, and market value analysis." />
-        <meta name="twitter:image" content="https://historivin.com/card.png" />
+        <meta name="twitter:image" content="https://historivin.com/logo2.png" />
         <meta name="twitter:image:alt" content="Historivin - Vehicle History Reports and VIN Check Services" />
         <meta name="twitter:site" content="@historivin" />
 

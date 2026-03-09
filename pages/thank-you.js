@@ -52,7 +52,7 @@ const ThankYouPage = () => {
         {/* Open Graph Tags */}
         <meta property="og:title" content="Thank You - Historivin | Order Confirmation" />
         <meta property="og:description" content="Thank you for your purchase! Your vehicle history report from Historivin is being prepared." />
-        <meta property="og:image" content="https://historivin.com/card.png" />
+        <meta property="og:image" content="https://historivin.com/logo2.png" />
         <meta property="og:url" content="https://historivin.com/thank-you" />
         <meta property="og:type" content="website" />
 

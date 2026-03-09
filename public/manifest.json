@@ -9,7 +9,7 @@
       "type": "image/x-icon"
     },
     {
-      "src": "card.png",
+      "src": "logo2.png",
       "type": "image/png",
       "sizes": "1200x630",
       "purpose": "any"
@@ -22,10 +22,14 @@
   "orientation": "portrait-primary",
   "scope": "/",
   "lang": "en-US",
-  "categories": ["automotive", "business", "productivity"],
+  "categories": [
+    "automotive",
+    "business",
+    "productivity"
+  ],
   "screenshots": [
     {
-      "src": "card.png",
+      "src": "logo2.png",
       "type": "image/png",
       "sizes": "1200x630",
       "form_factor": "wide"
