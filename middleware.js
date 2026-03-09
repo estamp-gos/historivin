@@ -3,8 +3,8 @@ import { NextResponse } from 'next/server';
 export function middleware(request) {
   const pathname = request.nextUrl.pathname;
 
-  // Explicitly allow Paddle webhook endpoint - no processing at all
-  if (pathname === '/api/mail') {
+  // Explicitly allow Paddle webhook endpoints - no processing at all
+  if (pathname === '/api/mail' || pathname === '/api/payment_success') {
     // Return early to avoid any processing
     return;
   }
@@ -22,7 +22,7 @@ export const config = {
   matcher: [
     // Be more specific with matching to avoid catching API routes
     '/11235813.html',
-    // Remove /api/mail from matcher to avoid middleware interference
-    '/((?!api/mail|_next/static|_next/image|favicon.ico).*)'
+    // Remove API webhook routes from matcher to avoid middleware interference
+    '/((?!api/mail|api/payment_success|_next/static|_next/image|favicon.ico).*)'
   ],
 };
