@@ -13,7 +13,7 @@ const PricingPlanTwo = () => {
 
   // Paddle Configuration
   const CONFIG = {
-    clientToken: "live_57a7704d22d689a024bdfcbfa1c",
+    clientToken: "live_e1f56e5f0e3e7970cd037292a2f",
     prices: {
       silver: "pri_01ksr01xa7yyr1xrnyy6jf16cm",
       gold: "pri_01ksr05jwem08jj00g9p8mk0fa",
@@ -73,6 +73,9 @@ const PricingPlanTwo = () => {
             eventCallback: function (event) {
               if (event.name === "checkout.completed") {
                 setShowModal(false);
+              }
+              if (event.name === "checkout.error") {
+                console.error("Paddle checkout error:", event.data);
               }
             }
           });
@@ -164,6 +167,7 @@ const PricingPlanTwo = () => {
       });
       setLoading(false);
     } catch (error) {
+      console.error("Paddle checkout open failed:", error);
       setLoading(false);
     }
   };

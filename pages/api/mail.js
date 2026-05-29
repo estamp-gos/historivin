@@ -26,7 +26,7 @@ function getRawBody(req) {
   });
 }
 
-// Helper function to get customer details from Paddle
+// Helper function to get customer details from Paddle okay
 async function getCustomerDetails(customerId) {
   try {
     if (!customerId) return null;
